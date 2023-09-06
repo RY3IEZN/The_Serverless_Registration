@@ -38,7 +38,7 @@ Great, we have our dynamodb table setup.
 
 # 2a. Create Lambda function IAM role
 
-first, we will create the IAM role, on the dashboard on the top left search for IAM and select it, it will navigate to the IAM page
+we will create the IAM role, on the dashboard on the top left search for IAM and select it, it will navigate to the IAM page
 
 ![](/aws%20serverless/images/iam1.png)
 
@@ -75,6 +75,22 @@ As usual dont forget to tag your resources, then you can click create
 we can now procced to write some code
 
 # 2b. Create Lambda function code
+
+we will create a Lambda, on the dashboard on the top left search for Lambda and select it, it will navigate to the Lambda page and cloick create a fucntion
+
+# 3. Create Api Gateway
+
+we will create an api gateway, on the dashboard on the top left search for api gateway and select it, it will navigate to the api gateway page and click create
+
+![](/aws%20serverless/images/apigw1.png).
+
+for this project we will use REST Api go ahead and click build
+
+![](/aws%20serverless/images/apigw2.png).
+
+we will authur our api from scratch so click the rest protocol, select rest api, input the name and description and set the endpoint type to "regional"
+
+![](/aws%20serverless/images/apigw3.png).
 
 # 5. Clean up
 
