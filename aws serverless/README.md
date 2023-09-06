@@ -134,6 +134,35 @@ we will authur our api from scratch so click the rest protocol, select rest api,
 
 ![](/aws%20serverless/images/apigw3.png)
 
+4 more steps to finish up setting the api gateway, we need to create the resource, the method, enable cors and deploy it to get the api endpoint
+
+to create the resource, click on action and then select create resource,
+
+NB: The name has to match the endpoint in this case `"/register"`, also enable CORS then create resource.
+
+![](/aws%20serverless/images/apigw4.png)
+
+to create the method, click on action and then select create method. ensure the intergration type is set to lambda function, the region is same region with your lambda in my case `eu-west-2` and specify thr function name
+
+![](/aws%20serverless/images/apigw5.png)
+
+you maybe prompted to grant permission to the method,click agree and continue
+
+To enable cors,click on action and then select enable cors. leave the values default and procced
+
+![](/aws%20serverless/images/apigw6.png)
+
+you maybe prompted to grant permission to the update,click agree and continue
+
+finally we deploy it and get our invocation url,
+To deploy the api,click on action and then select deploy api,
+
+![](/aws%20serverless/images/apigw7.png)
+
+Great, we now have our Url, dont forgrt to update the code with the new enpoint ending with `/register`
+
+# 4. Test the application
+
 # 5. Clean up
 
 So far we created 3 resources api gateway,lambda and dynamodb... go to the console page of each resource that was create and click delete on the top right.
