@@ -36,6 +36,8 @@ As usual dont forget to tag your resources, then you can click create
 
 Great, we have our dynamodb table setup.
 
+![](/aws%20serverless/images/dynamodb5.png)
+
 # 2a. Create Lambda function IAM role
 
 we will create the IAM role, on the dashboard on the top left search for IAM and select it, it will navigate to the IAM page
@@ -72,6 +74,10 @@ As usual dont forget to tag your resources, then you can click create
 
 ![](/aws%20serverless/images/iam7.png).
 
+then you should now see the role in the iam dashboard
+
+![](/aws%20serverless/images/iam8.png).
+
 we can now procced to write some code
 
 # 2b. Create Lambda function code
@@ -81,11 +87,38 @@ we will create a Lambda, on the dashboard on the top left search for Lambda and 
 ![](/aws%20serverless/images/lam1.png)
 
 on the next page we will author the lambda code from scratch, input the function name, set the runtime to python v3.9 and leave the architechure as x86.
+
 ![](/aws%20serverless/images/lam2.png)
+
+add the roles we created earlier to the permissions
+
+![](/aws%20serverless/images/lam3.png)
 
 As usual dont forget to tag your resources, click on advanced enable tags, fill in the tags then you can click create
 
 ![](/aws%20serverless/images/lam4.png)
+
+create and we should have our function
+
+![](/aws%20serverless/images/lam5.png)
+
+almost done, we can add our sample code,test&deploy
+
+![](/aws%20serverless/images/lam6.png)
+
+side test. i did a quick test here from the console and it shows its works, i updated the json with sample details.
+
+![](/aws%20serverless/images/lam7.png)
+
+check outcome
+
+![](/aws%20serverless/images/lam8.png)
+
+and at the db
+
+![](/aws%20serverless/images/lam9.png)
+
+next api gateway.
 
 # 3. Create Api Gateway
 
