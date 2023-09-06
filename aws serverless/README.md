@@ -124,15 +124,15 @@ next api gateway.
 
 we will create an api gateway, on the dashboard on the top left search for api gateway and select it, it will navigate to the api gateway page and click create
 
-![](/aws%20serverless/images/apigw1.png).
+![](/aws%20serverless/images/apigw1.png)
 
 for this project we will use REST Api go ahead and click build
 
-![](/aws%20serverless/images/apigw2.png).
+![](/aws%20serverless/images/apigw2.png)
 
 we will authur our api from scratch so click the rest protocol, select rest api, input the name and description and set the endpoint type to "regional"
 
-![](/aws%20serverless/images/apigw3.png).
+![](/aws%20serverless/images/apigw3.png)
 
 # 5. Clean up
 
