@@ -78,6 +78,15 @@ we can now procced to write some code
 
 we will create a Lambda, on the dashboard on the top left search for Lambda and select it, it will navigate to the Lambda page and cloick create a fucntion
 
+![](/aws%20serverless/images/lam1.png)
+
+on the next page we will author the lambda code from scratch, input the function name, set the runtime to python v3.9 and leave the architechure as x86.
+![](/aws%20serverless/images/lam2.png)
+
+As usual dont forget to tag your resources, click on advanced enable tags, fill in the tags then you can click create
+
+![](/aws%20serverless/images/lam4.png)
+
 # 3. Create Api Gateway
 
 we will create an api gateway, on the dashboard on the top left search for api gateway and select it, it will navigate to the api gateway page and click create
