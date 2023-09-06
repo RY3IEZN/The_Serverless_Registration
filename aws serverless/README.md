@@ -163,6 +163,20 @@ Great, we now have our Url, dont forgrt to update the code with the new enpoint 
 
 # 4. Test the application
 
+Just before we test our application, we need to update our code with the new enpoint url we got from api gateway and ending it `/register`
+
+![](/aws%20serverless/images/test1.png)
+
+after that done we can now go ahead and test on our sample website, the website is just a simple web that provides a form in which te deilas can be submitted and submit btn to post the details, go ahead and fill in the detials and press submit. if successful/failure a dialog box will pop up.
+
+![](/aws%20serverless/images/test2.png)
+
+To verify that his has been saved to the db, you can go back to dynamodb page in aws, click explore items and you should see it there
+
+NB:Please not that using the explorer consumes RCU, so careful no to refresh anyhow.
+
+![](/aws%20serverless/images/test3.png)
+
 # 5. Clean up
 
-So far we created 3 resources api gateway,lambda and dynamodb... go to the console page of each resource that was create and click delete on the top right.
+So far we created 3 resources api gateway,lambda and dynamodb... go to the console page of each resource that was created, select the resouce click actions > delete on the top right.
